@@ -1,0 +1,21 @@
+<html>
+<script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'vi'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00D1m0000000YPh',
+                'X247',
+                'https://afr-wms--wms3.sandbox.my.site.com/ESWX2471696472863347',
+                {
+                    scrt2URL: 'https://afr-wms--wms3.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://afr-wms--wms3.sandbox.my.site.com/ESWX2471696472863347/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<html>
